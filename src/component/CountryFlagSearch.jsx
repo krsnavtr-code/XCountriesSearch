@@ -56,7 +56,11 @@ const CountryFlagSearch = () => {
               alt={country.flags.alt}
               className={style.flag}
             />
-            <h4>{country.name.common}</h4>
+            <div>
+              <h2>{country.name.common}</h2>
+              <p>Region: {country.region}</p>
+              <p>Population: {country.population}</p>
+            </div>
           </div>
         ))}
         {filteredCountries.length === 0 && (
